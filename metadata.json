@@ -1,0 +1,7 @@
+{
+  "name": "DBS Consultancy Services",
+  "description": "Bridging Sustainability, Technology, Conservation, and Business Growth. 25+ years of expertise in nature, tourism, and IT infrastructure.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
