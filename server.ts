@@ -16,7 +16,7 @@ async function startServer() {
     console.log(`From: ${name} (${email})`);
     console.log(`Service: ${service}`);
     console.log(`Message: ${message}`);
-    console.log("Target Email: natureadmire@gmail.com");
+    console.log("Target Email: dbsconsultancyservices@gmail.com");
 
     // In a production environment, you would use a service like SendGrid, Mailgun, or Nodemailer here.
     // For now, we simulate a successful submission.
