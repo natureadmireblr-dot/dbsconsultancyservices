@@ -175,8 +175,8 @@ export default function App() {
       <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white/90 backdrop-blur-md shadow-sm py-4' : 'bg-transparent py-6'}`}>
         <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
             <div className="flex items-center gap-3 cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-            <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-sm overflow-hidden border border-slate-100 p-1">
-              <img src="https://picsum.photos/seed/dbs-tech-logo/200/200" alt="DBS Logo" className="w-full h-full object-contain" referrerPolicy="no-referrer" />
+            <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-sm overflow-hidden border border-slate-100 p-1.5">
+              <div className="w-full h-full bg-gradient-to-br from-blue-600 via-emerald-500 to-amber-500 rounded-lg flex items-center justify-center text-white font-bold text-xs">DBS</div>
             </div>
             <div className="flex flex-col">
               <span className={`font-display font-bold text-lg tracking-tight leading-none ${scrolled ? 'text-slate-900' : 'text-slate-900'}`}>DBS Global Technology</span>
@@ -355,8 +355,8 @@ export default function App() {
             <div className="relative">
               <div className="aspect-square rounded-3xl overflow-hidden shadow-2xl">
                 <img 
-                  src="https://picsum.photos/seed/nature/800/800" 
-                  alt="Nature and Sustainability" 
+                  src="https://picsum.photos/seed/global-tech-consulting/800/800" 
+                  alt="Global Technology and Sustainability" 
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
                 />
@@ -433,11 +433,11 @@ export default function App() {
                   </div>
                 </div>
                 <div className={`relative ${i % 2 !== 0 ? 'lg:order-1' : ''}`}>
-                  <div className="aspect-video rounded-3xl overflow-hidden shadow-xl">
+                  <div className="aspect-video rounded-3xl overflow-hidden shadow-xl bg-slate-100">
                     <img 
-                      src={`https://picsum.photos/seed/${service.id}/800/600`} 
+                      src={`https://picsum.photos/seed/tech-${service.id}/800/600`} 
                       alt={service.title} 
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                       referrerPolicy="no-referrer"
                     />
                   </div>
@@ -580,8 +580,8 @@ export default function App() {
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center gap-8 border-b border-slate-800 pb-12 mb-12">
             <div className="flex items-center gap-4">
-              <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center shadow-md overflow-hidden p-2">
-                <img src="https://picsum.photos/seed/dbs-tech-logo/200/200" alt="DBS Logo" className="w-full h-full object-contain" referrerPolicy="no-referrer" />
+              <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center shadow-md overflow-hidden p-2 border border-slate-100">
+                <div className="w-full h-full bg-gradient-to-br from-blue-600 via-emerald-500 to-amber-500 rounded-xl flex items-center justify-center text-white font-bold text-lg">DBS</div>
               </div>
               <div className="flex flex-col">
                 <span className="font-display font-bold text-2xl tracking-tight">DBS Global Technology</span>
